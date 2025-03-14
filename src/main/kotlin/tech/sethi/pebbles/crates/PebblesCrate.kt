@@ -120,7 +120,7 @@ object PebblesCrate : ModInitializer {
                         if (crateEventHandler.canOpenCrate()) {
                             heldStack.decrement(1)
                             val finalPrize = crateEventHandler.weightedRandomSelection(crateConfig.prize)
-                            crateEventHandler.showPrizesAnimation(finalPrize)
+                            // crateEventHandler.showPrizesAnimation(finalPrize)
                             crateEventHandler.updatePlayerCooldown()
                         }
 
